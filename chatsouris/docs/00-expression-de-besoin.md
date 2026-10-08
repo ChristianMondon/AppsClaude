@@ -16,7 +16,7 @@ Christian souhaite un jeu mobile Android simple, à prise en main immédiate, av
 Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (barrières, trous, flaques de lave), **ramasser des objets** pour franchir ceux qui ne se sautent pas (tronçonneuse pour les arbres, marteau pour les murs) et **des moyens de locomotion** (skateboard, vélo, rollers) pour aller plus vite, jusqu'à **attraper la souris**.
 
 ## 3. Utilisateurs
-- **Utilisateur principal [Hypothèse]** : Christian, puis son entourage (famille, amis), tout public, enfants compris.
+- **Utilisateurs** : Christian et sa famille (décision de Christian), enfants compris.
 - **Appareils** : tablette et téléphone Android.
 - **Compétence** : aucune ; le jeu doit se comprendre sans notice.
 
@@ -63,7 +63,7 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 Multijoueur, achats intégrés, publicité, classement en ligne, publication sur le Play Store, version iOS.
 
 ## 9. Questions ouvertes
-1. Public et appareils : bien « vous et votre entourage » sur tablette et téléphone ?
+1. ~~Public~~ : **réponse de Christian : lui et sa famille.** *(Résolue)* Reste à confirmer : les appareils, tablette et téléphone, ou seulement la tablette ?
 2. Vue du jeu : 2D de côté (comme un jeu de plateforme défilant) vous convient-elle ? [Hypothèse retenue dans le PRD]
 3. Un niveau se termine-t-il quand on attrape la souris (niveaux de longueur finie), ou veut-on aussi un mode sans fin ?
 4. Faut-il prévoir d'autres objets plus tard (ex. aimant, bouclier) ?

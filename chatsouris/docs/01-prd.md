@@ -25,7 +25,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 
 ## 3. Personas
 - **Christian, joueur et créateur** : veut essayer le jeu sur sa tablette et le faire évoluer.
-- **Un enfant ou un proche** : joue 5 minutes, sans lire de règles.
+- **Un membre de la famille, enfant compris** : joue 5 minutes, sans lire de règles.
 
 ## 4. Principe de jeu
 - Défilement horizontal automatique, vue 2D de côté **[Proposition]**.
