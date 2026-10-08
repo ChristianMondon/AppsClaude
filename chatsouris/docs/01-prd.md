@@ -126,6 +126,6 @@ Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichi
 1. ~~Vue 2D de côté~~ : **validée par Christian.** Reste à confirmer : un seul geste, toucher l'écran pour sauter.
 2. Trébuchement qui ralentit, sans système de vies ; défaite si la souris s'échappe.
 3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2).
-4. Trois niveaux de longueur finie pour la v1, mode sans fin hors périmètre.
+4. ~~Niveaux de longueur finie, mode sans fin hors périmètre~~ : **validé par Christian.** Reste à confirmer : trois niveaux pour la v1.
 5. Les jalons M1 à M4 et l'ordre de livraison.
 6. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.

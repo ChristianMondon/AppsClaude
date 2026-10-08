@@ -65,6 +65,6 @@ Multijoueur, achats intégrés, publicité, classement en ligne, publication sur
 ## 9. Questions ouvertes
 1. ~~Public~~ : **réponse de Christian : lui et sa famille.** *(Résolue)* Reste à confirmer : les appareils, tablette et téléphone, ou seulement la tablette ?
 2. ~~Vue du jeu~~ : **réponse de Christian : 2D de côté, défilement horizontal.** *(Résolue)*
-3. Un niveau se termine-t-il quand on attrape la souris (niveaux de longueur finie), ou veut-on aussi un mode sans fin ?
+3. ~~Niveaux~~ : **réponse de Christian : niveaux de longueur finie** (un niveau se termine quand on attrape la souris). *(Résolue)* Pas de mode sans fin en v1.
 4. Faut-il prévoir d'autres objets plus tard (ex. aimant, bouclier) ?
 5. ~~Ambiance graphique~~ : **réponse de Christian : pixel art.** *(Résolue)*
