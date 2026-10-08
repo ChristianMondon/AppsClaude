@@ -59,7 +59,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 
 ### 4.2 bis Projectiles
 - Des **noix lancées par des écureuils** perchés dans le décor, qui traversent l'écran vers le chat **[Proposition ; la nature des projectiles est à choisir]**.
-- Deux hauteurs possibles : bas (on saute par-dessus) ; le bouclier protège dans tous les cas.
+- En v1, les projectiles passent à hauteur basse : on les évite en sautant, ou on les bloque avec le bouclier.
 - Un avertissement visuel bref (l'écureuil se prépare) laisse le temps de réagir.
 - Un projectile évité ou bloqué disparaît ; un projectile qui touche fait trébucher.
 
@@ -77,7 +77,6 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | US3 | franchir barrières, trous et flaques de lave en sautant | Sauter au bon moment passe l'obstacle ; sinon trébuchement |
 | US4 | ramasser une tronçonneuse pour couper un arbre | Sans tronçonneuse, l'arbre fait trébucher ; avec, il est coupé et l'outil consommé |
 | US5 | ramasser un marteau pour casser un mur | Même règle que US4 avec le marteau et le mur |
-| US13 | ramasser un bouclier pour me protéger des projectiles | Sans bouclier, un projectile fait trébucher ; avec, il est absorbé et le bouclier disparaît ; sauter par-dessus évite aussi le projectile |
 | US6 | ramasser un skateboard, des rollers ou un vélo pour aller plus vite | La vitesse augmente selon l'objet, pour la durée prévue, puis revient à la normale |
 | US7 | voir l'écart entre le chat et la souris | Un indicateur se met à jour en continu |
 | US8 | gagner en attrapant la souris | Écart à zéro → écran de victoire avec « Niveau suivant » et « Rejouer » |
@@ -85,6 +84,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | US10 | choisir un niveau parmi plusieurs de difficulté croissante | Au moins 3 niveaux ; chacun plus dense et plus rapide |
 | US11 | retrouver ma progression | Niveaux débloqués et meilleur temps conservés après fermeture de l'app (Souhaitable) |
 | US12 | mettre en pause | Un bouton met le jeu en pause et le reprend |
+| US13 | ramasser un bouclier pour me protéger des projectiles | Sans bouclier, un projectile fait trébucher ; avec, il est absorbé et le bouclier disparaît ; sauter par-dessus évite aussi le projectile |
 
 ## 5 bis. Direction artistique : pixel art
 Décision de Christian : le jeu est en **pixel art**.
@@ -136,7 +136,7 @@ Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichi
 1. ~~Vue 2D de côté~~ : **validée par Christian.** Reste à confirmer : un seul geste, toucher l'écran pour sauter.
 2. Trébuchement qui ralentit, sans système de vies ; défaite si la souris s'échappe.
 3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2), bouclier qui absorbe un projectile (ou expire après 10 s).
-6bis. Projectiles : noix lancées par des écureuils, hauteur basse seulement en v1 *(à confirmer)*.
+6. Projectiles : noix lancées par des écureuils, hauteur basse seulement en v1 *(à confirmer)*.
 4. ~~Niveaux de longueur finie, mode sans fin hors périmètre~~ : **validé par Christian.** Reste à confirmer : trois niveaux pour la v1.
 5. Les jalons M1 à M4 et l'ordre de livraison.
-6. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.
+7. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.
