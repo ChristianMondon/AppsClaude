@@ -10,14 +10,14 @@ Règle : après la validation de ce plan, chaque jalon suit **tests d'abord pour
 
 ## Jalon M1 – Cœur de jeu
 Objectif : un chat qui court et saute, une souris à rattraper, victoire et défaite, avec barrières, trous et lave.
-- [ ] T1.1 Squelette Gradle / Android, manifeste paysage plein écran, workflow CI `chatsouris.yml`
-- [ ] T1.2 `Params`, `Model`, `step` : avancée du chat, gravité, saut, tampon de saut (+ tests US1, US2)
-- [ ] T1.3 Souris, écart, victoire / défaite, blocage en fin de piste (+ tests US7, US8, US9)
-- [ ] T1.4 Obstacles sautables, trébuchement, invulnérabilité (+ tests US3)
-- [ ] T1.5 `LevelDef` niveau 1 et `LevelGenerator` avec invariants 1, 2, 4, 5 (+ tests)
-- [ ] T1.6 Palette, sprites du chat, de la souris et des obstacles, conversion en bitmaps, rendu avec parallaxe et agrandissement entier
-- [ ] T1.7 Boucle de jeu à pas fixe, toucher pour sauter, indicateur d'écart, écran de fin minimal
-- [ ] T1.8 Robot de simulation : le niveau 1 est gagné par un joueur parfait (test)
+- [x] T1.1 Squelette Gradle / Android, manifeste paysage plein écran, workflow CI `chatsouris.yml`
+- [x] T1.2 `Params`, `Model`, `step` : avancée du chat, gravité, saut, tampon de saut (+ tests US1, US2)
+- [x] T1.3 Souris, écart, victoire / défaite, blocage en fin de piste (+ tests US7, US8, US9)
+- [x] T1.4 Obstacles sautables, trébuchement, invulnérabilité (+ tests US3)
+- [x] T1.5 `LevelDef` niveau 1 et `LevelGenerator` avec invariants 1, 2, 4, 5 (+ tests)
+- [x] T1.6 Palette, sprites du chat, de la souris et des obstacles, conversion en bitmaps, rendu avec parallaxe et agrandissement entier
+- [x] T1.7 Boucle de jeu à pas fixe, toucher pour sauter, indicateur d'écart, écran de fin minimal
+- [x] T1.8 Robot de simulation : le niveau 1 est gagné par un joueur parfait (test)
 
 **Essai tablette M1** : le saut est agréable, le niveau 1 se gagne et se perd, 60 images/s.
 
