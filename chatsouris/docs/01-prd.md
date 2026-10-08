@@ -28,7 +28,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 - **Un membre de la famille, enfant compris** : joue 5 minutes, sans lire de règles.
 
 ## 4. Principe de jeu
-- Défilement horizontal automatique, vue 2D de côté **[Proposition]**.
+- Défilement horizontal automatique, vue 2D de côté *(validé)*.
 - Le chat avance seul ; **un seul geste : toucher l'écran pour sauter**.
 - La souris court devant. Un **indicateur d'écart** montre la distance chat-souris.
 - Le chat rattrape la souris quand l'écart tombe à zéro : **victoire du niveau**.
@@ -123,7 +123,7 @@ Reprises du besoin : une seule commande, 60 images/s, hors ligne, tout public, c
 Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichis.
 
 ## 12. Décisions à valider
-1. Vue 2D de côté, un seul geste (toucher pour sauter).
+1. ~~Vue 2D de côté~~ : **validée par Christian.** Reste à confirmer : un seul geste, toucher l'écran pour sauter.
 2. Trébuchement qui ralentit, sans système de vies ; défaite si la souris s'échappe.
 3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2).
 4. Trois niveaux de longueur finie pour la v1, mode sans fin hors périmètre.
