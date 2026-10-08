@@ -35,6 +35,7 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 | BF10 | Plusieurs niveaux de difficulté croissante. | Important |
 | BF11 | Sauvegarde de la progression et des meilleurs scores. | Souhaitable |
 | BF12 | Sons et musique. | Souhaitable |
+| BF13 | Rendu en pixel art : sprites nets, palette réduite, sans lissage. | Indispensable |
 
 ## 5. Besoins non fonctionnels
 - **Prise en main** : jouable dès la première seconde, une seule commande.
@@ -42,7 +43,7 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 - **Hors ligne** : aucun compte ni connexion requis [Hypothèse].
 - **Public** : contenu adapté aux enfants (pas de violence graphique, pas de publicité intrusive).
 - **Qualité** : logique de jeu testée automatiquement ; build et APK produits par la CI GitHub.
-- **Légal** : personnages et décors originaux, sans personnage de marque.
+- **Style graphique** : pixel art (décisions de Christian) ; personnages et décors originaux, sans personnage de marque.
 
 ## 6. Contraintes
 - Plateforme : Android natif, Kotlin + Jetpack Compose [Hypothèse, cohérent avec les projets précédents du dépôt].
@@ -66,4 +67,4 @@ Multijoueur, achats intégrés, publicité, classement en ligne, publication sur
 2. Vue du jeu : 2D de côté (comme un jeu de plateforme défilant) vous convient-elle ? [Hypothèse retenue dans le PRD]
 3. Un niveau se termine-t-il quand on attrape la souris (niveaux de longueur finie), ou veut-on aussi un mode sans fin ?
 4. Faut-il prévoir d'autres objets plus tard (ex. aimant, bouclier) ?
-5. Ambiance graphique : dessin simple coloré, ou pixel-art ?
+5. ~~Ambiance graphique~~ : **réponse de Christian : pixel art.** *(Résolue)*

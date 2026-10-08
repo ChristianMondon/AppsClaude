@@ -19,6 +19,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | Gameplay lisible | Chaque obstacle a une réponse évidente (sauter, couper, casser) |
 | Qualité technique | Tests unitaires verts ; APK produit par la CI à chaque PR |
 | Fluidité | ≥ 60 images/s sur la tablette cible |
+| Identité visuelle | Pixel art cohérent (palette et taille de grille uniques) |
 
 **Non-objectifs (v1)** : multijoueur, publicité, achats, classement en ligne, Play Store.
 
@@ -75,6 +76,14 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | US11 | retrouver ma progression | Niveaux débloqués et meilleur temps conservés après fermeture de l'app (Souhaitable) |
 | US12 | mettre en pause | Un bouton met le jeu en pause et le reprend |
 
+## 5 bis. Direction artistique : pixel art
+Décision de Christian : le jeu est en **pixel art**.
+- Sprites en grille de **16×16 pixels** (chat, souris, objets, obstacles) agrandis par un facteur entier, **sans lissage** pour garder des pixels nets **[Proposition]**.
+- **Palette réduite** (une quinzaine de couleurs) commune à tout le jeu **[Proposition]**.
+- Décor en tuiles répétables (sol, ciel, fond lointain avec défilement plus lent).
+- Animations en quelques images : course du chat, saut, trébuchement.
+- **Production des images [Proposition]** : les sprites sont dessinés par Claude sous forme de grilles de pixels dans le code (pas de fichier image externe), faciles à retoucher ; Christian peut les remplacer plus tard par ses propres images.
+
 ## 6. Écrans
 1. **Accueil** : titre, « Jouer », choix du niveau.
 2. **Jeu** : décor défilant, chat, souris, indicateur d'écart, outil et locomotion actifs, bouton pause.
@@ -103,13 +112,15 @@ Reprises du besoin : une seule commande, 60 images/s, hors ligne, tout public, c
 | Saut peu précis sur tactile | Frustration | Marge de tolérance sur les collisions, tests sur la tablette |
 | Fluidité avec Compose Canvas | Saccades | Boucle de jeu à pas fixe, peu d'objets à l'écran, mesure tôt |
 | Difficulté mal calibrée | Jeu trop dur ou trop facile | Paramètres des niveaux faciles à ajuster |
-| Graphismes | Rendu pauvre | Formes simples et colorées en v1, habillage plus tard |
+| Qualité du pixel art | Rendu amateur ou incohérent | Palette et taille de grille uniques, sprites relus sur la tablette, remplaçables ensuite par de vrais fichiers image |
 
 ## 11. Jalons proposés
 1. **M1 – Cœur de jeu** : chat, saut, défilement, souris, écart, victoire/défaite (obstacles sautables).
 2. **M2 – Outils et locomotions** : arbres, murs, objets, vitesses.
 3. **M3 – Niveaux et écrans** : accueil, fin de niveau, 3 niveaux.
-4. **M4 – Finition** : sauvegarde, pause, sons, habillage.
+4. **M4 – Finition** : sauvegarde, pause, sons, animations supplémentaires.
+
+Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichis.
 
 ## 12. Décisions à valider
 1. Vue 2D de côté, un seul geste (toucher pour sauter).
@@ -117,3 +128,4 @@ Reprises du besoin : une seule commande, 60 images/s, hors ligne, tout public, c
 3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2).
 4. Trois niveaux de longueur finie pour la v1, mode sans fin hors périmètre.
 5. Les jalons M1 à M4 et l'ordre de livraison.
+6. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.
