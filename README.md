@@ -6,3 +6,6 @@ Développé avec une méthode « AI-native SDLC » : spécification → plan →
 ## Lancer
 Ouvrir le dossier dans Android Studio (Koala+), laisser Gradle synchroniser, puis Run ▶.
 Tests de la logique : `gradle :app:testDebugUnitTest` (ou via Android Studio).
+
+## Autres projets
+- [`blocmon/`](blocmon/) : explorer un monde en blocs et capturer des créatures (Android, Compose). APK : onglet Actions → artifact `blocmon-debug-apk`.
