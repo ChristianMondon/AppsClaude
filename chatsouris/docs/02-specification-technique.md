@@ -2,10 +2,10 @@
 
 | | |
 |---|---|
-| Statut | **Brouillon à valider** |
+| Statut | **Validé par Christian le 2026-10-08** |
 | Date | 2026-10-08 |
 | Basé sur | `00-expression-de-besoin.md` et `01-prd.md` (validés) |
-| Étape suivante | Plan (`03-plan.md`), puis code, après validation de ce document |
+| Étape suivante | Plan (`03-plan.md`, validé), puis code |
 
 > Les valeurs chiffrées sont des **valeurs initiales** : elles sont regroupées dans un seul fichier de paramètres pour être ajustées après les essais sur la tablette. Les points qui s'écartent du PRD ou le précisent sont listés en section 12.
 

@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Statut | **Brouillon à valider** |
+| Statut | **Validé par Christian le 2026-10-08** |
 | Basé sur | `02-specification-technique.md` |
 | Méthode | Une tâche = un petit commit ; une PR par jalon ; essai sur la tablette à la fin de chaque jalon |
 
