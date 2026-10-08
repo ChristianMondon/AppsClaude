@@ -40,6 +40,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | Trou | Sauter | Chute : trébuchement et retour sur le bord |
 | Flaque de lave | Sauter | Brûlure : trébuchement |
 | Arbre | **Tronçonneuse** (trop haut pour sauter) | Trébuchement |
+| Projectile en vol | Sauter pour l'éviter, **ou Bouclier** | Trébuchement |
 | Mur | **Marteau** (trop haut pour sauter) | Trébuchement |
 
 ### 4.2 Objets
@@ -50,9 +51,17 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | Skateboard | Vitesse ×1,3 | 8 s |
 | Rollers | Vitesse ×1,5 | 6 s |
 | Vélo | Vitesse ×1,8 | 5 s |
+| Bouclier | Absorbe le prochain projectile qui touche le chat | 1 projectile, ou 10 s sans impact **[Proposition]** |
 
+- Le bouclier ne protège que des projectiles, pas des obstacles au sol (barrières, trous, lave, arbres, murs).
 - On porte au plus un outil de chaque type ; l'outil ramassé s'affiche à l'écran.
 - Une locomotion remplace la précédente si on en ramasse une nouvelle.
+
+### 4.2 bis Projectiles
+- Des **noix lancées par des écureuils** perchés dans le décor, qui traversent l'écran vers le chat **[Proposition ; la nature des projectiles est à choisir]**.
+- Deux hauteurs possibles : bas (on saute par-dessus) ; le bouclier protège dans tous les cas.
+- Un avertissement visuel bref (l'écureuil se prépare) laisse le temps de réagir.
+- Un projectile évité ou bloqué disparaît ; un projectile qui touche fait trébucher.
 
 ### 4.3 Trébuchement, victoire, défaite
 - Un trébuchement **ralentit le chat un court instant** : l'écart avec la souris augmente.
@@ -68,6 +77,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 | US3 | franchir barrières, trous et flaques de lave en sautant | Sauter au bon moment passe l'obstacle ; sinon trébuchement |
 | US4 | ramasser une tronçonneuse pour couper un arbre | Sans tronçonneuse, l'arbre fait trébucher ; avec, il est coupé et l'outil consommé |
 | US5 | ramasser un marteau pour casser un mur | Même règle que US4 avec le marteau et le mur |
+| US13 | ramasser un bouclier pour me protéger des projectiles | Sans bouclier, un projectile fait trébucher ; avec, il est absorbé et le bouclier disparaît ; sauter par-dessus évite aussi le projectile |
 | US6 | ramasser un skateboard, des rollers ou un vélo pour aller plus vite | La vitesse augmente selon l'objet, pour la durée prévue, puis revient à la normale |
 | US7 | voir l'écart entre le chat et la souris | Un indicateur se met à jour en continu |
 | US8 | gagner en attrapant la souris | Écart à zéro → écran de victoire avec « Niveau suivant » et « Rejouer » |
@@ -93,8 +103,8 @@ Décision de Christian : le jeu est en **pixel art**.
 | Niveau | Longueur | Densité d'obstacles | Objets |
 |---|---|---|---|
 | 1 | Courte | Faible, barrières et trous seulement | Skateboard |
-| 2 | Moyenne | Moyenne, ajout de lave et d'arbres | + tronçonneuse, rollers |
-| 3 | Longue | Forte, tous les obstacles | Tous les objets |
+| 2 | Moyenne | Moyenne, ajout de lave, d'arbres et de projectiles | + tronçonneuse, rollers, bouclier |
+| 3 | Longue | Forte, tous les obstacles et projectiles fréquents | Tous les objets |
 
 Les niveaux sont définis par une graine et des paramètres, de sorte que le niveau soit reproductible et testable **[Proposition]**.
 
@@ -104,7 +114,7 @@ Reprises du besoin : une seule commande, 60 images/s, hors ligne, tout public, c
 ## 9. Indicateurs de succès
 - Niveau 1 réussi par un nouveau joueur en moins de 3 essais.
 - Aucun plantage pendant 10 parties consécutives sur la tablette.
-- Tous les critères d'acceptation US1 à US10 couverts par des tests automatiques sur la logique.
+- Tous les critères d'acceptation US1 à US10 et US13 couverts par des tests automatiques sur la logique.
 
 ## 10. Risques
 | Risque | Impact | Parade |
@@ -125,7 +135,8 @@ Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichi
 ## 12. Décisions à valider
 1. ~~Vue 2D de côté~~ : **validée par Christian.** Reste à confirmer : un seul geste, toucher l'écran pour sauter.
 2. Trébuchement qui ralentit, sans système de vies ; défaite si la souris s'échappe.
-3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2).
+3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2), bouclier qui absorbe un projectile (ou expire après 10 s).
+6bis. Projectiles : noix lancées par des écureuils, hauteur basse seulement en v1 *(à confirmer)*.
 4. ~~Niveaux de longueur finie, mode sans fin hors périmètre~~ : **validé par Christian.** Reste à confirmer : trois niveaux pour la v1.
 5. Les jalons M1 à M4 et l'ordre de livraison.
 6. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.

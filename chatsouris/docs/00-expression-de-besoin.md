@@ -27,9 +27,11 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 | BF2 | Le joueur fait sauter le chat d'une simple action (toucher l'écran). | Indispensable |
 | BF3 | Une souris fuit devant le chat ; l'objectif est de la rattraper. | Indispensable |
 | BF4 | Des obstacles à sauter : barrières, trous, flaques de lave. | Indispensable |
+| BF4b | Des projectiles lancés vers le chat, à éviter en sautant ou à bloquer avec un bouclier. | Important |
 | BF5 | Des obstacles qui ne se sautent pas : arbres (à couper) et murs (à casser). | Indispensable |
 | BF6 | Des objets à ramasser : tronçonneuse (arbres), marteau (murs). | Indispensable |
 | BF7 | Des moyens de locomotion à ramasser : skateboard, vélo, rollers (vitesse accrue). | Indispensable |
+| BF7b | Un bouclier à ramasser, qui protège d'un projectile. | Important |
 | BF8 | Une issue claire à la partie : victoire (souris attrapée) ou défaite (souris perdue). | Indispensable |
 | BF9 | Un retour visuel de la distance entre le chat et la souris. | Important |
 | BF10 | Plusieurs niveaux de difficulté croissante. | Important |
@@ -55,7 +57,7 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 ## 7. Critères de réussite
 1. Une partie complète (démarrage → victoire ou défaite) se joue sans explication.
 2. Les trois familles d'éléments (obstacles à sauter, objets-outils, locomotions) sont présentes et reconnaissables.
-3. Chaque objet a un effet visible et utile.
+3. Chaque objet (outils, locomotions, bouclier) a un effet visible et utile.
 4. Le jeu tourne de façon fluide sur la tablette de Christian.
 5. L'APK s'installe depuis GitHub Actions et le jeu se lance sans plantage.
 
@@ -66,5 +68,6 @@ Multijoueur, achats intégrés, publicité, classement en ligne, publication sur
 1. ~~Public~~ : **réponse de Christian : lui et sa famille.** *(Résolue)* Reste à confirmer : les appareils, tablette et téléphone, ou seulement la tablette ?
 2. ~~Vue du jeu~~ : **réponse de Christian : 2D de côté, défilement horizontal.** *(Résolue)*
 3. ~~Niveaux~~ : **réponse de Christian : niveaux de longueur finie** (un niveau se termine quand on attrape la souris). *(Résolue)* Pas de mode sans fin en v1.
-4. Faut-il prévoir d'autres objets plus tard (ex. aimant, bouclier) ?
+4. ~~Autres objets~~ : **réponse de Christian : un bouclier** qui protège des projectiles, lesquels sinon s'évitent en sautant. *(Résolue)* D'autres objets (ex. aimant) restent possibles plus tard, hors v1.
+6. Qui ou quoi lance les projectiles, et quelle forme ont-ils ? (Proposition dans le PRD : des noix lancées par des écureuils perchés dans le décor.)
 5. ~~Ambiance graphique~~ : **réponse de Christian : pixel art.** *(Résolue)*
