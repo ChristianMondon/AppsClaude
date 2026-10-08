@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Statut | **Brouillon à valider** |
+| Statut | **Validé par Christian le 2026-10-08** |
 | Date | 2026-10-08 |
 | Basé sur | `00-expression-de-besoin.md` |
-| Étape suivante | Spécification technique et plan, après validation |
+| Étape suivante | Spécification technique et plan |
 
-> Les choix marqués **[Proposition]** sont des décisions de conception proposées par Claude, à confirmer ou modifier.
+> Les choix marqués **[Proposition]** ont été proposés par Claude et validés par Christian (« OK pour tout le reste »). Ils pourront être ajustés après les premiers essais sur la tablette.
 
 ## 1. Vision
 Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, casse et roule pour rattraper la souris.
@@ -28,7 +28,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 - **Un membre de la famille, enfant compris** : joue 5 minutes, sans lire de règles.
 
 ## 4. Principe de jeu
-- Défilement horizontal automatique, vue 2D de côté *(validé)*.
+- Défilement horizontal automatique, vue 2D de côté, tablette en paysage.
 - Le chat avance seul ; **un seul geste : toucher l'écran pour sauter**.
 - La souris court devant. Un **indicateur d'écart** montre la distance chat-souris.
 - Le chat rattrape la souris quand l'écart tombe à zéro : **victoire du niveau**.
@@ -58,7 +58,7 @@ Un jeu de course-poursuite drôle et immédiat : le chat bondit, tronçonne, cas
 - Une locomotion remplace la précédente si on en ramasse une nouvelle.
 
 ### 4.2 bis Projectiles
-- Des **noix lancées par des écureuils** perchés dans le décor, qui traversent l'écran vers le chat **[Proposition ; la nature des projectiles est à choisir]**.
+- Des **noix lancées par des écureuils** perchés dans le décor, qui traversent l'écran vers le chat *(validé)*.
 - En v1, les projectiles passent à hauteur basse : on les évite en sautant, ou on les bloque avec le bouclier.
 - Un avertissement visuel bref (l'écureuil se prépare) laisse le temps de réagir.
 - Un projectile évité ou bloqué disparaît ; un projectile qui touche fait trébucher.
@@ -132,11 +132,12 @@ Reprises du besoin : une seule commande, 60 images/s, hors ligne, tout public, c
 
 Les sprites en pixel art sont présents dès M1 (versions simples), puis enrichis.
 
-## 12. Décisions à valider
-1. ~~Vue 2D de côté~~ : **validée par Christian.** Reste à confirmer : un seul geste, toucher l'écran pour sauter.
+## 12. Décisions validées
+1. Vue 2D de côté, un seul geste (toucher l'écran pour sauter).
 2. Trébuchement qui ralentit, sans système de vies ; défaite si la souris s'échappe.
 3. Outils à usage unique, locomotions à durée limitée (valeurs du tableau 4.2), bouclier qui absorbe un projectile (ou expire après 10 s).
-4. ~~Niveaux de longueur finie, mode sans fin hors périmètre~~ : **validé par Christian.** Reste à confirmer : trois niveaux pour la v1.
+4. Trois niveaux de longueur finie pour la v1, mode sans fin hors périmètre.
 5. Les jalons M1 à M4 et l'ordre de livraison.
-6. Projectiles : noix lancées par des écureuils, hauteur basse seulement en v1 *(à confirmer)*.
-7. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code *(le style est décidé ; le détail technique est à confirmer)*.
+6. Projectiles : noix lancées par des écureuils, hauteur basse seulement en v1.
+7. Pixel art : grille 16×16, palette réduite, sprites dessinés dans le code.
+8. Tablette Android uniquement, en mode paysage.

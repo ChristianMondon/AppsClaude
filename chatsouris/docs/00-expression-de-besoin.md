@@ -2,12 +2,12 @@
 
 | | |
 |---|---|
-| Statut | **Brouillon à valider** |
+| Statut | **Validé par Christian le 2026-10-08** |
 | Date | 2026-10-08 |
 | Auteur | Claude, d'après les échanges avec Christian Mondon |
-| Étape suivante | PRD (`01-prd.md`), après validation de ce document |
+| Étape suivante | PRD (`01-prd.md`, validé), puis spécification technique et plan |
 
-> Les points marqués **[Hypothèse]** n'ont pas été confirmés : ils sont à valider ou corriger. Les questions ouvertes sont listées en fin de document.
+> Les points marqués **[Hypothèse]** sont des choix par défaut non contredits lors de la validation. Les réponses aux questions posées sont en fin de document.
 
 ## 1. Contexte et problème
 Christian souhaite un jeu mobile Android simple, à prise en main immédiate, avec un univers amusant. Il s'agit d'un projet personnel, mené avec une méthode « AI-native SDLC » : besoin → PRD → spécification → plan → code → tests → revue.
@@ -17,7 +17,7 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 
 ## 3. Utilisateurs
 - **Utilisateurs** : Christian et sa famille (décision de Christian), enfants compris.
-- **Appareils** : tablette et téléphone Android.
+- **Appareils** : tablette Android uniquement (décision de Christian), en mode paysage [Hypothèse].
 - **Compétence** : aucune ; le jeu doit se comprendre sans notice.
 
 ## 4. Besoins fonctionnels
@@ -64,10 +64,10 @@ Un chat court derrière une souris et doit **sauter par-dessus des obstacles** (
 ## 8. Hors périmètre
 Multijoueur, achats intégrés, publicité, classement en ligne, publication sur le Play Store, version iOS.
 
-## 9. Questions ouvertes
-1. ~~Public~~ : **réponse de Christian : lui et sa famille.** *(Résolue)* Reste à confirmer : les appareils, tablette et téléphone, ou seulement la tablette ?
+## 9. Questions posées et réponses
+1. **Public et appareils** : Christian et sa famille, sur tablette seule. *(Résolue)*
 2. ~~Vue du jeu~~ : **réponse de Christian : 2D de côté, défilement horizontal.** *(Résolue)*
 3. ~~Niveaux~~ : **réponse de Christian : niveaux de longueur finie** (un niveau se termine quand on attrape la souris). *(Résolue)* Pas de mode sans fin en v1.
-4. ~~Autres objets~~ : **réponse de Christian : un bouclier** qui protège des projectiles, lesquels sinon s'évitent en sautant. *(Résolue)* D'autres objets (ex. aimant) restent possibles plus tard, hors v1.
-6. Qui ou quoi lance les projectiles, et quelle forme ont-ils ? (Proposition dans le PRD : des noix lancées par des écureuils perchés dans le décor.)
+4. **Autres objets** : un bouclier qui protège des projectiles, lesquels sinon s'évitent en sautant. *(Résolue)* D'autres objets (ex. aimant) restent possibles plus tard, hors v1.
+6. **Projectiles** : des écureuils les lancent. *(Résolue)*
 5. ~~Ambiance graphique~~ : **réponse de Christian : pixel art.** *(Résolue)*
